@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Венарус</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container flex header__container">
+            <img class="header__logo-big" src="img/logo.png" alt="logo">
+            <img class="header__logo-small" src="img/logo-small.png" alt="logo">
+            <div class="header__right-block flex">
+                <button class="header__btn header__btn__search">
+                    <img src="img/search-btn.png" alt="search">
+                </button>
+                <textarea class="header__search-block" placeholder="Что ищем"></textarea>
+                <button class="header__btn">
+                    <img src="img/geo-btn.png" alt="geo">
+                </button>
+                <button class="header__btn-2 no-active" id="burger-btn-2">
+                    <img src="img/burger-1line.png" alt="burger">
+                </button>
+                <button class="header__btn" id="burger-btn">
+                    <img src="img/burger-btn.png" alt="burger">
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="open-burger-menu no-active" id="open-burger-menu">
+        <img class="line line-1" src="img/line1.png" alt="decor-line">
+        <img class="line line-2" src="img/line-2.png" alt="decor-line">
+        <img class="line line-3" src="img/line-3.png" alt="decor-line">
+        <img class="line line-4" src="img/line-4.png" alt="decor-line">
+        <img class="line line-5" src="img/line-5.png" alt="decor-line">
+        <div class="container">
+            <ul class="open-burger-menu__list">
+                <li class="open-burger-menu__item"><a href="#">Где купить</a></li>
+                <li class="open-burger-menu__item"><a href="#">О препарате</a></li>
+                <li class="open-burger-menu__item"><a href="#">О варикозе</a></li>
+                <li class="open-burger-menu__item"><a href="#">Решение</a></li>
+                <li class="open-burger-menu__item"><a href="#">Специалистам</a></li>
+                <li class="open-burger-menu__item"><a href="#">Геморрой</a></li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <section class="hero">
+        <div class="hero__background"></div>
+        <div class="container hero__container flex">
+            <div class="hero__left-block flex">
+                <h1>Надежный помощник в лечении варикоза</h1>
+                <ul class="hero__list">
+                    <li class="hero__item">
+                        <a class="flex hero__link" href="#">
+                            <img class="hero__item-pic" src="img/scheme.png" alt="Показать схему">
+                            <p class="hero__p">Схема приема</p>
+                        </a>
+                    </li>
+                    <li class="hero__item">
+                        <a class="flex hero__link" href="Venarus_instukcia_1000.pdf" download="">
+                            <img class="hero__item-pic" src="img/instruction.png" alt="Скачать инструкцию">
+                            <p class="hero__p">Инструкция</p>
+                        </a>
+                    </li>
+                    <li class="hero__item">
+                        <a class="flex hero__link" href="#">
+                            <img class="hero__item-pic" src="img/geo-hero.png" alt="Где купить">
+                            <p class="hero__p">Где купить</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero__right-block flex">
+                <div class="hero__images">
+
+                    <img class="hero__img hero__pic-left no" src="img/venarus_hero-left.png" alt="Венарус-900">
+                    <img class="hero__img hero__pic-center main-drug yes" src="img/venarus_hero-center.png"
+                        alt="Венарус-900">
+                    <img class="hero__img hero__pic-right no" src="img/venarus_hero-right.png" alt="Венарус-450">
+
+                </div>
+                <div class="hero__arrows-btns flex">
+                    <button class="hero__btn hero__btn-prev">
+                        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="33.9999" cy="33.9999" r="33.4999" transform="rotate(-180 33.9999 33.9999)"
+                                stroke="white" />
+                            <path d="M38.0796 20.3997L24.4796 33.9997L38.0796 47.5996" stroke="white" />
+                        </svg>
+                    </button>
+                    <button class="hero__btn hero__btn-next">
+                        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="34.0002" cy="34" r="33.5" stroke="white" />
+                            <path d="M29.9203 47.5999L43.5203 33.9999L29.9203 20.3999" stroke="white" />
+                        </svg>
+                    </button>
+                </div>
+                <button class="hero__last-btn">Где купить ></button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="more-info">
+            <marquee scrollamount="15" hspace="20">
+                <h2>получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>>
+                    получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>>
+                    получить скидку 10% >>></h2>
+            </marquee>
+        <div class="container more-info__container flex">
+            <div class="more-info__block flex">
+                <img class="more-info__img" src="img/info-1.png" alt="more-info">
+                <p class="more-info-paragraph">Доказанная эффективность</p>
+            </div>
+            <div class="more-info__block flex">
+                <img class="more-info__img" src="img/info-2.png" alt="more-info">
+                <p class="more-info-paragraph">Новая дозировка 100 мг + 900 мг</p>
+            </div>
+            <div class="more-info__block flex">
+                <img class="more-info__img" src="img/info-3.png" alt="more-info">
+                <p class="more-info-paragraph more-info-paragraph-3">Удобный прием. Одна таблетка в сутки*
+                    <button class="more-info__btn">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14.5" stroke="#47093E" />
+                            <path
+                                d="M14.624 10.648C14.24 10.648 13.936 10.536 13.712 10.312C13.488 10.088 13.376 9.8 13.376 9.448C13.376 9.04267 13.504 8.70667 13.76 8.44C14.016 8.17333 14.3573 8.04 14.784 8.04C15.2107 8.04 15.536 8.15733 15.76 8.392C15.984 8.616 16.096 8.89867 16.096 9.24C16.096 9.66667 15.968 10.008 15.712 10.264C15.456 10.52 15.0987 10.648 14.64 10.648H14.624ZM13.776 13.624L12.64 13.32V12.248L15.568 11.896H15.6L16.048 12.216V19.912L17.12 20.04V21H12.656V20.04L13.776 19.896V13.624Z"
+                                fill="#47093E" />
+                        </svg>
+                    </button>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="application">
+        <div class="container application__container flex">
+            <div class="application__left-block">
+                <h3 class="application__h3">Комплексное действие</h3>
+                <p class="application__p">Венарус показан для терапии симптомов хронических заболеваний вен (устранения
+                    и облегчения симптомов).</p>
+            </div>
+            <ul class="application__right-block">
+                <li class="flex application__item application__item-1">
+                    <a class="application__list-link" href="#">Подробнее ></a>
+                    <p class="application__list-paragraph">Помогает<br>предотвратить судороги</p>
+                </li>
+                <li class="flex application__item application__item-2">
+                    <a class="application__list-link" href="#">Подробнее ></a>
+                    <p class="application__list-paragraph">Способствует снижению тяжести
+                        в ногах</p>
+                </li>
+                <li class="flex application__item application__item-3">
+                    <a class="application__list-link" href="#">Подробнее ></a>
+                    <p class="application__list-paragraph">Способствует снижению болевых ощущений</p>
+                </li>
+                <li class="flex application__item application__item-4">
+                    <a class="application__list-link" href="#">Подробнее ></a>
+                    <p class="application__list-paragraph">Помогает
+                        уменьшить отеки</p>
+                </li>
+                <li class="flex application__item application__item-5">
+                    <a class="application__list-link" href="#">Подробнее ></a>
+                    <p class="application__list-paragraph">Оказывает ангиопротекторное
+                        и венотонизурующее действие</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="production">
+        <div class="container production__container flex">
+            <div class="flex production__main-block">
+                <h3 class="production__h3">О производстве Венарус</h3>
+                <div class="production__rigth-block flex">
+                    <div class="production__videos flex">
+                        <div class="video__block">
+                            <img class="video video-1" src="img/video-1.png" alt="video">
+                            <button class="play__btn">
+                                <img src="img/play.png" alt="play">
+                            </button>
+                        </div>
+                        <div class="video__block">
+                            <img class="video video-2 big-img" src="img/video-2.png" alt="video">
+                            <button class="play__btn" id="play-2">
+                                <img src="img/play.png" alt="play">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="production__btns flex">
+                        <button class="production__prev-btn">
+                            <img class="production__prev-img" src="img/production-arrow-prev.png"
+                                alt="Предыдущее видео">
+                        </button>
+                        <button class="production__next-btn">
+                            <img class="production__next-img" src="img/production-arrow-prev.png" alt="Следующее видео">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button class="production__last-btn">Подробнее ></button>
+        </div>
+    </section>
+
+
+    <section class="expert-opinions">
+        <div class="container expert-opinions__container flex">
+            <div class="expert-opinions__left-block">
+                <h3 class="expert-opinions__h3">Мнение специалистов</h3>
+                <p class="expert-opinions__paragraph">Фармакотерапия — неотъемлемый компонент современного лечения
+                    хронического заболевания вен.</p>
+            </div>
+            <div class="expert-opinions__right-block">
+                <!-- Slider main container -->
+                <div class="swiper expert-opinions__swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper expert-opinions__swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide expert-opinions__swiper-slide">
+                            <img src="img/video-pic.jpg" alt="video">
+                        </div>
+                        <div class="swiper-slide expert-opinions__swiper-slide">
+                            <img src="img/video-pic.jpg" alt="video">
+                        </div>
+                        <div class="swiper-slide expert-opinions__swiper-slide">
+                            <img src="img/video-pic.jpg" alt="video">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination expert-opinions__swiper-pagination"></div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="useful-info">
+        <div class="container useful-info__container">
+            <div class="flex useful-info__main-block">
+                <div class="useful-info__left-block flex">
+                    <h3 class="useful-info__h3">Полезная информация</h3>
+                    <p class="useful-info__paragraph">ВЕНАРУС — НАДЕЖНЫЙ ПОМОЩНИК В ЛЕЧЕНИИ ВАРИКОЗА, ХРАНИТЕЛЬ ЖЕНСКИХ
+                        НОГ НА ПУТИ
+                        К ЕЕ МЕЧТЕ!</p>
+                </div>
+
+                <div class="useful-info__right-block flex">
+                    <div class="useful-info__left-pic">
+                        <div class="darkness">
+                            <p class="useful-info__left-text">Профилак-тические упражнения</p>
+                        </div>
+                    </div>
+                    <div class="useful-info__right-pics flex">
+                        <div class="useful-info__top-pics flex">
+                            <div class="div-1">
+                                <div class="div-1__darkness">Диагностика и способы лечения</div>
+                            </div>
+                            <div class="div-2">
+                                <div class="div-2__darkness">Рекомен-<br>дации по питанию </div>
+                            </div>
+                        </div>
+                        <div class="useful-info__bottom-pic">
+                            Факты о варикозе
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button class="useful-info__btn flex">Подробнее ></button>
+        </div>
+    </section>
+
+    <section class="where-to-buy">
+        <div class="container where-to-buy__container">
+            <div class="where-to-buy__main flex">
+                <div class="where-to-buy__left-block">
+                    <h3 class="where-to-buy__h3">Где купить</h3>
+                    <p class="where-to-buy__paragraph">Ветонизирующее средство ВЕНАРУС вы можете приобрести в аптеках
+                        вашего города</p>
+                </div>
+                <div class="where-to-buy__right-block">
+                    <img class="where-to-buy__venarus-900-pic" src="img/venarus_900.png" alt="Венарус 900">
+                    <img class="where-to-buy__venarus-450-pic" src="img/venarus-450.jpg" alt="Венарус 450">
+                </div>
+            </div>
+            <div class="where-to-buy__btns-block flex">
+                <a class="where-to-buy__link" tabindex="0" href="#">apteka.ru</a>
+                <a class="where-to-buy__link" href="#">366.ru</a>
+                <a class="where-to-buy__link" href="#">stolichki.ru</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <h4 class="footer__h4">БИОЛОГИЧЕСКИ АКТИВНАЯ ДОБАВКА. НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВОМ</h4>
+            <div class="footer__main-block flex">
+                <div class="footer__left">
+                    <a class="footer__left-link" href="#">Сообщить о нежелательном явлении</a>
+                </div>
+                <div class="footer__center flex">
+                    <a class="footer__center-link" href="#">Условия пользования сайтом и файлами Cookies</a>
+                    <address class="footer__address">г. Москва, ул. Шаболовка, д. 31, стр. 11, 4 этаж
+                        Телефон: +7 (495) 555-55-55</address>
+                </div>
+                <div class="footer__right flex">
+                    <div class="footer__social-nets flex">
+                        <a class="footer__nets-btn" href="#">
+                            <svg width="33" height="20" viewBox="0 0 33 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M31.3689 1.66406C31.5447 0.960938 31.3689 0.375 30.3142 0.375H26.8572C25.9783 0.375 25.5681 0.84375 25.3337 1.37109C25.3337 1.37109 23.5759 5.64844 21.115 8.46094C20.2947 9.22266 19.9431 9.51562 19.4744 9.51562C19.2986 9.51562 18.947 9.22266 18.947 8.51953V1.66406C18.947 0.785156 18.7126 0.375 17.9509 0.375H12.5603C11.9744 0.375 11.6814 0.785156 11.6814 1.19531C11.6814 2.01562 12.9119 2.19141 13.0291 4.53516V9.63281C13.0291 10.7461 12.8533 10.9805 12.3845 10.9805C11.2126 10.9805 8.40015 6.64453 6.70093 1.72266C6.34937 0.785156 5.9978 0.375 5.1189 0.375H1.66187C0.724365 0.375 0.48999 0.84375 0.48999 1.37109C0.48999 2.30859 1.66187 6.82031 5.93921 12.8555C8.8103 16.957 12.8533 19.125 16.4861 19.125C18.6541 19.125 18.947 18.6562 18.947 17.8359C18.947 13.9102 18.7712 13.5 19.8259 13.5C20.3533 13.5 21.2322 13.793 23.283 15.7852C25.6267 18.1289 26.0369 19.125 27.3259 19.125H30.783C31.7791 19.125 32.2478 18.6562 31.9548 17.6602C31.3103 15.668 26.9158 11.4492 26.6814 11.1562C26.1541 10.5117 26.3298 10.2188 26.6814 9.63281C26.6814 9.63281 30.9001 3.65625 31.3689 1.66406Z"
+                                    fill="#7A7A7A" />
+                            </svg>
+                        </a>
+                        <a class="footer__nets-btn" href="#">
+                            <svg width="28" height="27" viewBox="0 0 28 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.4087 0.625H3.78369C2.20166 0.625 0.971191 1.91406 0.971191 3.4375V24.0625C0.971191 25.6445 2.20166 26.875 3.78369 26.875H11.811V17.9688H8.11963V13.75H11.811V10.5859C11.811 6.95312 13.979 4.90234 17.2603 4.90234C18.9009 4.90234 20.5415 5.19531 20.5415 5.19531V8.76953H18.7251C16.9087 8.76953 16.3228 9.88281 16.3228 11.0547V13.75H20.3657L19.7212 17.9688H16.3228V26.875H24.4087C25.9321 26.875 27.2212 25.6445 27.2212 24.0625V3.4375C27.2212 1.91406 25.9321 0.625 24.4087 0.625Z"
+                                    fill="#7A7A7A" />
+                            </svg>
+                        </a>
+                        <a class="footer__nets-btn" href="#">
+                            <svg width="31" height="25" viewBox="0 0 31 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M27.8076 6.65625C28.9795 5.77734 30.0342 4.72266 30.8545 3.49219C29.7998 3.96094 28.5693 4.3125 27.3389 4.42969C28.6279 3.66797 29.5654 2.49609 30.0342 1.03125C28.8623 1.73438 27.5146 2.26172 26.167 2.55469C24.9951 1.32422 23.4131 0.621094 21.6553 0.621094C18.2568 0.621094 15.5029 3.375 15.5029 6.77344C15.5029 7.24219 15.5615 7.71094 15.6787 8.17969C10.5811 7.88672 6.01074 5.42578 2.96387 1.73438C2.43652 2.61328 2.14355 3.66797 2.14355 4.83984C2.14355 6.94922 3.19824 8.82422 4.89746 9.9375C3.90137 9.87891 2.90527 9.64453 2.08496 9.17578V9.23438C2.08496 12.2227 4.19434 14.6836 7.00684 15.2695C6.53809 15.3867 5.95215 15.5039 5.4248 15.5039C5.01465 15.5039 4.66309 15.4453 4.25293 15.3867C5.01465 17.8477 7.2998 19.6055 9.99512 19.6641C7.88574 21.3047 5.24902 22.3008 2.37793 22.3008C1.85059 22.3008 1.38184 22.2422 0.913086 22.1836C3.6084 23.9414 6.83105 24.9375 10.3467 24.9375C21.6553 24.9375 27.8076 15.6211 27.8076 7.47656C27.8076 7.18359 27.8076 6.94922 27.8076 6.65625Z"
+                                    fill="#7A7A7A" />
+                            </svg>
+                        </a>
+                        <a class="footer__nets-btn" href="#">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.4625 9.17969C11.4625 10.4102 12.5172 11.4648 13.8063 11.4648C15.0367 11.4648 16.0914 10.4688 16.0914 9.17969C16.0914 7.83203 15.0367 6.83594 13.8063 6.83594C12.5172 6.83594 11.4625 7.83203 11.4625 9.17969ZM26.9313 3.4375C26.9313 1.91406 25.6422 0.625 24.1188 0.625H3.49377C1.91174 0.625 0.681274 1.91406 0.681274 3.4375V24.0625C0.681274 25.6445 1.91174 26.875 3.49377 26.875H24.1188C25.6422 26.875 26.9313 25.6445 26.9313 24.0625V3.4375ZM9.00159 9.17969C9.00159 6.54297 11.1696 4.375 13.8063 4.375C16.3844 4.375 18.5524 6.54297 18.5524 9.17969C18.5524 11.7578 16.3844 13.8672 13.8063 13.8672C11.1696 13.8672 9.00159 11.7578 9.00159 9.17969ZM19.2555 14.4531C19.7242 15.3906 19.1969 15.8594 17.9664 16.6211C16.9703 17.2656 15.6227 17.5 14.6852 17.6172L15.4469 18.3789L18.2594 21.1914C19.2555 22.2461 17.6149 23.8281 16.5602 22.832C15.8571 22.1289 14.861 21.1328 13.8063 20.0195L10.9938 22.832C9.93909 23.8281 8.29846 22.1875 9.35315 21.1914C10.0563 20.4297 11.0524 19.4336 12.1071 18.3789L12.8688 17.6172C11.9899 17.5 10.5836 17.2656 9.58752 16.6211C8.35706 15.8594 7.82971 15.3906 8.29846 14.4531C8.59143 13.9258 9.29456 13.457 10.2906 14.2773C10.2906 14.2773 11.6383 15.332 13.8063 15.332C15.9156 15.332 17.2633 14.2773 17.2633 14.2773C18.2594 13.457 18.9625 13.9258 19.2555 14.4531Z"
+                                    fill="#7A7A7A" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer__logo-info flex">
+                        <img src="img/footer-logo.png" alt="logo">
+                        <p class="footer__last-p">Создание сайтов Фарм-студия №1 в Рунете</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
